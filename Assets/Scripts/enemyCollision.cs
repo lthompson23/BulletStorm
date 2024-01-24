@@ -14,5 +14,10 @@ public class enemyCollision : MonoBehaviour
         {
             healthBar.health -= 25;
         }
+
+        if (collision.tag == "Bullet")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
